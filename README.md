@@ -1,1 +1,4 @@
 # Common-Subexpression-Elimination-and-Load-Store-Optimization
+1.Implemented an LLVM pass that performs Common Subexpression Elimination, Simple Constant Folding, Dead Code Elimination, Simple load-store Optimization during the CSE traversal.
+2. The objective was to find and remove the additional redundant instructions while preserving the order of memory operations, in various benchmarks.
+3. Analysed the statistics(execution time and the number of deleted instructions) and compared the performance with and without the optimisation.
