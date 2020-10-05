@@ -147,13 +147,9 @@ void DCE_pass(Module &M)
 	    // Erase it from worklist
 	    worklist.erase(i);
 	  
-	    //if(isDead(*i))
-	    //{
-	      i->eraseFromParent();
-	      CSEDead++;
-        total_deleted_instr++;
-	    //}
-	  
+	    i->eraseFromParent();
+	    CSEDead++;
+            total_deleted_instr++;
 	  }
   }
 }
